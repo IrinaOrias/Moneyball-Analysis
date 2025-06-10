@@ -11,27 +11,26 @@
 In 2001, the Oakland Athletics faced one of Major League Baseball’s most pressing challenges: build a competitive team with a drastically limited budget. My responsibility was to identify undervalued players using historical salary and performance data, and to support strategic decision-making for player acquisition.
 
 ---
-
 ### Dataset Overview
 
-The analysis is based on `moneyball.db`, which includes:
+This analysis is based on the `moneyball.db` SQLite database, which contains four interconnected tables: `players`, `teams`, `salaries`, and `performances`. Together, these datasets enable a comprehensive exploration of player performance, compensation, and team history to uncover value-driven insights in baseball.
+
 ## Tables
 
-### players
-This dataset contains biographical information for 15,622 professional baseball players, including their names, handedness (bats/throws), physical attributes (height, weight), and birthplace details. It also includes career timelines such as debut and final game dates. Useful for demographic and historical analysis.
+### `players`
+Contains biographical data on 15,622 professional baseball players, including names, batting and throwing handedness, physical attributes (height and weight), and place of birth. It also includes career timeline details such as debut and final game dates, supporting demographic and career span analysis.
 
-### teams
-The teams dataset includes 148 entries representing baseball teams over various years, from 1871 to 2001. Each record includes a team name, associated ballpark, and the year of participation. It allows for linking performance and salary data to specific team contexts.
+### `teams`
+Includes 148 records representing team-year combinations from 1871 to 2001. Each entry provides the team name, ballpark, and season year, offering the contextual backbone for analyzing performance and salary data at the team level.
 
-### salaries
-This dataset includes 13,959 salary records for players between 1985 and 2001. It links each salary to a player and team by year, making it suitable for evaluating player value and cost-effectiveness. Salaries range from $0 to over $22 million.
+### `salaries`
+Comprises 13,959 records of player salaries from 1985 to 2001, with each entry linked to a player, team, and season. Salary figures range from $0 to $22 million, enabling in-depth evaluation of player value, payroll efficiency, and market trends over time.
 
-### performances
-The performances dataset contains 81,989 records of player statistics, including games played, hits, home runs, RBIs, and stolen bases. Each entry is associated with a player, team, and year. It provides the core metrics needed to analyze on-field contributions and identify undervalued talent.
+### `performances`
+Consists of 81,989 entries detailing individual player performance statistics such as games played, hits, home runs, RBIs, and stolen bases. Each record is associated with a player, team, and year, forming the quantitative foundation for identifying undervalued players and analyzing on-field impact.
 
-- `performances`: Player batting performance per season
+All queries in this project aim to reveal performance-to-cost insights and expose market inefficiencies in player valuation — the essence of the Moneyball strategy.
 
-All queries were designed to uncover key performance-to-cost insights and identify market inefficiencies in player valuation.
 
 ---
 
