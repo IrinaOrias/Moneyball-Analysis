@@ -46,7 +46,7 @@ All queries were designed to uncover key performance-to-cost insights and identi
 ##  Example: ROI Analysis Query (11.sql)
 
 ```sql
-SELECT p.first_name, p.last_name, ROUND(s.salary * 1.0 / perf.hits, 2) AS "dollars per hit"
+SELECT p.first_name, p.last_name, ROUND(s.salary / perf.hits, 2) AS "dollars per hit"
 FROM salaries s
 JOIN players p ON p.id = s.player_id
 JOIN performances perf ON s.player_id = perf.player_id AND s.year = perf.year
