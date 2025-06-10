@@ -12,12 +12,23 @@ In 2001, the Oakland Athletics faced one of Major League Baseball’s most press
 
 ---
 
-## Dataset Overview
+### Dataset Overview
 
 The analysis is based on `moneyball.db`, which includes:
-- `players`: Player IDs, names
-- `teams`: Team information
-- `salaries`: Annual player salaries
+## Tables
+
+### players
+This dataset contains biographical information for 15,622 professional baseball players, including their names, handedness (bats/throws), physical attributes (height, weight), and birthplace details. It also includes career timelines such as debut and final game dates. Useful for demographic and historical analysis.
+
+### teams
+The teams dataset includes 148 entries representing baseball teams over various years, from 1871 to 2001. Each record includes a team name, associated ballpark, and the year of participation. It allows for linking performance and salary data to specific team contexts.
+
+### salaries
+This dataset includes 13,959 salary records for players between 1985 and 2001. It links each salary to a player and team by year, making it suitable for evaluating player value and cost-effectiveness. Salaries range from $0 to over $22 million.
+
+### performances
+The performances dataset contains 81,989 records of player statistics, including games played, hits, home runs, RBIs, and stolen bases. Each entry is associated with a player, team, and year. It provides the core metrics needed to analyze on-field contributions and identify undervalued talent.
+
 - `performances`: Player batting performance per season
 
 All queries were designed to uncover key performance-to-cost insights and identify market inefficiencies in player valuation.
