@@ -53,30 +53,33 @@ All queries in this project aim to reveal performance-to-cost insights and expos
 
 ---
 
-##  Queries```sql
+```sql
 -- Check for duplicates
 
-SELECT *, COUNT(*)
+SELECT * , COUNT(*)
 FROM players
 GROUP BY
-    id, first_name, last_name, bats, throws, weight, height, debut, final_game,
-    birth_year, birth_month, birth_day, birth_city, birth_state, birth_country
+    id, first_name, last_name, bats, throws , weight, height, debut, final_game, birth_year, birth_month, birth_day, birth_city, birth_state, birth_country
 HAVING COUNT(*) > 1;
 
-SELECT *, COUNT(*)
+SELECT * , COUNT(*)
 FROM teams
-GROUP BY id, year, name, park
+GROUP BY
+    id, year, name, park
 HAVING COUNT(*) > 1;
 
-SELECT *, COUNT(*)
+SELECT * , COUNT(*)
 FROM salaries
-GROUP BY id, player_id, team_id, year, salary
+GROUP BY
+    id, player_id, team_id, year, salary
 HAVING COUNT(*) > 1;
 
-SELECT *, COUNT(*)
+SELECT * , COUNT(*)
 FROM performances
-GROUP BY id, player_id, team_id, year, G, AB, H, 2B, 3B, HR, RBI, SB
+GROUP BY
+    id, player_id, team_id, year, G, AB, H, 2B, 3B, HR, RBI, SB
 HAVING COUNT(*) > 1;
+
 
 -- 1. How have average player salaries evolved over time?
 
@@ -86,6 +89,7 @@ SELECT
 FROM salaries
 GROUP BY year
 ORDER BY year;
+
 
 -- 2. What is Cal Ripken Jr.’s salary history?
 
@@ -97,6 +101,7 @@ JOIN players ON salaries.player_id = players.id
 WHERE players.first_name = 'Cal' AND players.last_name = 'Ripken'
 ORDER BY year;
 
+
 -- 3. What is Ken Griffey Jr.’s home run trajectory?
 
 SELECT
@@ -105,9 +110,10 @@ SELECT
 FROM performances pf
 JOIN players p ON pf.player_id = p.id
 WHERE p.first_name = 'Ken' 
-  AND p.last_name = 'Griffey'
-  AND p.birth_year = 1969
+AND p.last_name = 'Griffey'
+AND p.birth_year = 1969
 ORDER BY pf.year;
+
 
 -- 4. Who were the 50 lowest-paid players in 2001?
 
@@ -118,8 +124,12 @@ SELECT
 FROM players p 
 JOIN salaries s ON s.player_id = p.id
 WHERE s.year = 2001
-ORDER BY s.salary, p.first_name, p.last_name
+ORDER BY 
+    s.salary,
+    p.first_name,
+    p.last_name
 LIMIT 50;
+
 
 -- 5. Which teams did Satchel Paige play for?
 
@@ -129,6 +139,7 @@ FROM teams t
 JOIN performances pf ON t.id = pf.team_id AND t.year = pf.year
 JOIN players p ON pf.player_id = p.id
 WHERE p.first_name = 'Satchel' AND p.last_name = 'Paige';
+
 
 -- 6. Top 5 teams by total hits in 2001?
 
@@ -142,6 +153,7 @@ GROUP BY t.name
 ORDER BY "total hits" DESC
 LIMIT 5;
 
+
 -- 7. Who received the highest salary in MLB history?
 
 SELECT
@@ -152,6 +164,7 @@ JOIN players AS pl ON s.player_id = pl.id
 ORDER BY s.salary DESC
 LIMIT 1;
 
+
 -- 8. Cost of acquiring the best home run hitter in 2001?
 
 SELECT
@@ -161,6 +174,7 @@ JOIN salaries AS s ON p.player_id = s.player_id AND p.year = s.year
 WHERE p.year = 2001
 ORDER BY p.HR DESC
 LIMIT 1;
+
 
 -- 9. 5 lowest-paying teams by average salary in 2001?
 
@@ -174,6 +188,7 @@ GROUP BY t.name
 ORDER BY "average salary" ASC
 LIMIT 5;
 
+
 -- 10. Player-level yearly stats: home runs & salaries
 
 SELECT
@@ -185,7 +200,12 @@ SELECT
 FROM players AS pl
 JOIN salaries AS s ON pl.id = s.player_id
 JOIN performances AS p ON s.player_id = p.player_id AND s.year = p.year
-ORDER BY pl.id ASC, s.year DESC, p.HR DESC, s.salary DESC;
+ORDER BY
+    pl.id ASC,
+    s.year DESC,
+    p.HR DESC,
+    s.salary DESC;
+
 
 -- 11. 10 best value-for-money players (cost per hit)
 
@@ -199,6 +219,7 @@ JOIN performances AS pf ON s.player_id = pf.player_id AND s.year = pf.year
 WHERE s.year = 2001 AND pf.H > 0
 ORDER BY "dollars per hit" ASC, p.first_name ASC, p.last_name ASC
 LIMIT 10;
+
 
 -- 12. Overlap: best cost per hit and per RBI
 
