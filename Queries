@@ -209,28 +209,26 @@ FROM
 WHERE
     p.id IN (
         SELECT
-            p.id
+            s.player_id
         FROM
-            players AS p
-        JOIN salaries AS s ON p.id = s.player_id
+            salaries AS s
         JOIN performances AS pf ON s.player_id = pf.player_id AND s.year = pf.year
         WHERE
-            s.year = 2001 AND pf.H > 0
+            s.year = 2001 AND pf.h > 0
         ORDER BY
-            s.salary * 1.0 / pf.H ASC
+            s.salary / pf.h ASC
         LIMIT 10
     )
     AND p.id IN (
         SELECT
-            p.id
+            s.player_id
         FROM
-            players AS p
-        JOIN salaries AS s ON p.id = s.player_id
+            salaries AS s
         JOIN performances AS pf ON s.player_id = pf.player_id AND s.year = pf.year
         WHERE
             s.year = 2001 AND pf.RBI > 0
         ORDER BY
-            s.salary * 1.0 / pf.RBI ASC
+            s.salary / pf.RBI ASC
         LIMIT 10
     )
 ORDER BY
