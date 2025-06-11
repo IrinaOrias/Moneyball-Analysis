@@ -4,6 +4,8 @@
 **Perpective as:** Data Analyst – Recruitment Strategy & Salary Optimization  
 **Tools:** SQL (SQLite), Relational Databases, Aggregation, Filtering, Performance Metrics
 
+Project developed as part of Harvard University’s CS50’s Introduction to Databases with SQL.
+
 ---
 
 ##  Business Objective
