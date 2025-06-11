@@ -17,6 +17,11 @@ In 2001, the Oakland Athletics faced one of Major League Baseball’s most press
 
 This analysis is based on the `moneyball.db` SQLite database, which contains four interconnected tables: `players`, `teams`, `salaries`, and `performances`. Together, these datasets enable a comprehensive exploration of player performance, compensation, and team history to uncover value-driven insights in baseball.
 
+### Time Coverage
+
+The data spans more than 150 years of professional baseball history. Player careers range from May 4, 1871, to as recently as October 4, 2022, reflecting updates beyond the Moneyball era. However, salary and team performance data are concentrated between 1985 and 2001, aligning with the core focus of the Moneyball strategy. This period is ideal for exploring player value, performance efficiency, and market inefficiencies in player compensation.
+
+
 ## Tables
 
 ### `players`
