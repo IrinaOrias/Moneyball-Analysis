@@ -1,7 +1,7 @@
 # Moneyball SQL Analysis ⚾ | Strategic Player Value Assessment
 
 **Client Scenario:** Oakland Athletics (2001)  
-**Perpective as:** Data Analyst – Recruitment Strategy & Salary Optimization  
+**Perspective as:** Data Analyst – Recruitment Strategy & Salary Optimization  
 **Tools:** SQL (SQLite), Relational Databases, Aggregation, Filtering, Performance Metrics
 
 Project developed as part of Harvard University’s CS50’s Introduction to Databases with SQL.
