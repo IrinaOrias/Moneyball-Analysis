@@ -181,7 +181,7 @@ ORDER BY
 SELECT
     p.first_name,
     p.last_name,
-    ROUND(s.salary * 1.0 / pf.H, 2) AS "dollars per hit"
+    ROUND(s.salary / pf.H, 2) AS "dollars per hit"
 FROM
     players AS p
 JOIN salaries AS s
