@@ -58,6 +58,20 @@ All queries in this project aim to reveal performance-to-cost insights and expos
 |11 | ROI Analysis | 10 best value-for-money players (cost per hit) |
 |12 | Dual-Impact Players | Overlap: best cost per hit **and** per RBI |
 
+## Reccomendations
+
+# 1. Prioritize Performance-Based Scouting Over Reputation
+With evidence that less famous players often deliver better ROI (e.g., A.J. Pierzynski and Torii Hunter), teams should:
+Adopt advanced efficiency metrics (e.g., cost per hit, cost per RBI) to evaluate talent.
+Shift focus from star power to data-driven player performance when making recruitment or contract decisions.
+Regularly reassess veteran contracts to avoid overpaying based on past performance or reputation.
+
+# 2. Build Competitive Teams on Smaller Budgets
+Low-salary teams like Anaheim, Arizona, and Atlanta showed strong results, proving that:
+Strategic roster planning and efficiency-focused metrics can compensate for limited payroll.
+Investing in player development, scouting, and analytics can uncover undervalued talent and maintain competitiveness.
+Encourage a "Moneyball" philosophy to optimize team building—focusing on output per dollar rather than big names.
+
 ---
 
 ```sql
