@@ -47,18 +47,23 @@ All queries in this project aim to reveal performance-to-cost insights and expos
 Average salary in 1985: $476,000
 By 2001: $3.4 million yearly by player?
 Salary growth significantly outpaced performance growth, indicating inefficiencies in the player market
+
 🔹 Undervalued Players Deliver High ROI
 A.J. Pierzynski had the best cost per hit: ~$1,909 per hit
 Other players like Torii Hunter appeared in both top 10 cost-efficiency lists (per hit and per RBI)
+
 🔹 Position Doesn’t Always Predict Pay
 Some low-profile players produced more hits or RBIs per salary dollar than star players
 Demonstrated that raw stats and efficiency metrics outperform reputation in valuation
+
 🔹 Top Performer in HR vs. Salary
 The top home run hitter in 2001 earned $10.3M
 While this player delivered results, multiple others achieved strong HR numbers at a fraction of the cost
+
 🔹 Low-Paying Teams Still Competitive
 Teams like Anaheim, Arizona, and Atlanta had low average salaries but strong performance metrics
 Validated the idea that team strategy can overcome budget constraints
+
 🔹 Legacy Insight: Cal Ripken Jr.
 His salary rose as his career advanced, but his later performance didn’t justify the high pay—demonstrating aging curve inefficiency in contracts
 
