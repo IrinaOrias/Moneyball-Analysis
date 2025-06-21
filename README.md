@@ -41,22 +41,27 @@ All queries in this project aim to reveal performance-to-cost insights and expos
 
 ---
 
-##  Strategic Insights
+# Important or Relevant Insights
 
-| # | Focus Area | Key Business Question |
-|---|------------|------------------------|
-| 1 | Trend Analysis | How have average player salaries evolved over time? |
-| 2 | Contract Assessment | What is Cal Ripken Jr.’s salary history? |
-| 3 | Performance Scouting | What is Ken Griffey Jr.’s home run trajectory? |
-| 4 | Cost Optimization | Who were the 50 lowest-paid players in 2001? |
-| 5 | Legacy Research | Which teams did Satchel Paige play for? |
-| 6 | Competitive Analysis | Top 5 teams by total hits in 2001? |
-| 7 | Salary Benchmarking | Who received the highest salary in MLB history? |
-| 8 | Investment Feasibility | Cost of acquiring the best home run hitter in 2001? |
-| 9 | Market Intelligence | 5 lowest-paying teams by average salary in 2001? |
-|10 | Career Profiling | Player-level yearly stats: home runs & salaries |
-|11 | ROI Analysis | 10 best value-for-money players (cost per hit) |
-|12 | Dual-Impact Players | Overlap: best cost per hit **and** per RBI |
+🔹 Salaries Have Risen Rapidly (1985–2001)
+Average salary in 1985: $476,000
+By 2001: $3.4 million yearly by player?
+Salary growth significantly outpaced performance growth, indicating inefficiencies in the player market
+🔹 Undervalued Players Deliver High ROI
+A.J. Pierzynski had the best cost per hit: ~$1,909 per hit
+Other players like Torii Hunter appeared in both top 10 cost-efficiency lists (per hit and per RBI)
+🔹 Position Doesn’t Always Predict Pay
+Some low-profile players produced more hits or RBIs per salary dollar than star players
+Demonstrated that raw stats and efficiency metrics outperform reputation in valuation
+🔹 Top Performer in HR vs. Salary
+The top home run hitter in 2001 earned $10.3M
+While this player delivered results, multiple others achieved strong HR numbers at a fraction of the cost
+🔹 Low-Paying Teams Still Competitive
+Teams like Anaheim, Arizona, and Atlanta had low average salaries but strong performance metrics
+Validated the idea that team strategy can overcome budget constraints
+🔹 Legacy Insight: Cal Ripken Jr.
+His salary rose as his career advanced, but his later performance didn’t justify the high pay—demonstrating aging curve inefficiency in contracts
+
 
 # Reccomendations
 
